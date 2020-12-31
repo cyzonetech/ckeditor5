@@ -52,7 +52,7 @@
     "@ckeditor/ckeditor5-horizontal-line": "^24.0.0",
     "@ckeditor/ckeditor5-remove-format": "^24.0.0",
     "@ckeditor/ckeditor5-select-all": "^24.0.0",
-    "@ckeditor/ckeditor5-upload": "^^24.0.0",
+    "@ckeditor/ckeditor5-upload": "^24.0.0",
     "postcss-loader": "^3.0.0",
     "raw-loader": "^4.0.1",
     "style-loader": "^1.2.1",
