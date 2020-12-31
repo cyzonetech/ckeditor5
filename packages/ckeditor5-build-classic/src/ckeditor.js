@@ -29,6 +29,15 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
+import Font from '@ckeditor/ckeditor5-font/src/font';
+import Underline from "@ckeditor/ckeditor5-basic-styles/src/underline";
+import Strikethrough from "@ckeditor/ckeditor5-basic-styles/src/strikethrough";
+import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
+import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline';
+import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat';
+import SelectAll from '@ckeditor/ckeditor5-select-all/src/selectall';
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
+import LinkImage from '@ckeditor/ckeditor5-link/src/linkimage';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -56,7 +65,16 @@ ClassicEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	TextTransformation
+	TextTransformation,
+	Font,
+	Underline,
+	Strikethrough,
+	SimpleUploadAdapter,
+	HorizontalLine,
+	RemoveFormat,
+	SelectAll,
+	Alignment,
+	LinkImage
 ];
 
 // Editor configuration.
@@ -70,22 +88,23 @@ ClassicEditor.defaultConfig = {
 			'link',
 			'bulletedList',
 			'numberedList',
+			'alignment',
 			'|',
-			'indent',
-			'outdent',
-			'|',
-			'imageUpload',
 			'blockQuote',
-			'insertTable',
+			'imageUpload',
 			'mediaEmbed',
+			'insertTable',
 			'undo',
-			'redo'
+			'redo',
+			'removeFormat'
 		]
 	},
 	image: {
 		toolbar: [
 			'imageStyle:full',
 			'imageStyle:side',
+			'|',
+			'linkImage',
 			'|',
 			'imageTextAlternative'
 		]
@@ -98,5 +117,5 @@ ClassicEditor.defaultConfig = {
 		]
 	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
-	language: 'en'
+	language: 'zh-cn'
 };
