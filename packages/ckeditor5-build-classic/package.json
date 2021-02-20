@@ -49,7 +49,7 @@
     "@ckeditor/ckeditor5-horizontal-line": "^25.0.0",
     "@ckeditor/ckeditor5-remove-format": "^25.0.0",
     "@ckeditor/ckeditor5-select-all": "^25.0.0",
-    "@ckeditor/ckeditor5-upload": "^25.0.0",
+    "@ckeditor/ckeditor5-upload": "^25.0.0"
   },
   "devDependencies": {
     "@ckeditor/ckeditor5-core": "^25.0.0",

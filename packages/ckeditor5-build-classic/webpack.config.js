@@ -30,6 +30,7 @@ module.exports = {
 	},
 
 	optimization: {
+		minimize: false,
 		minimizer: [
 			new TerserPlugin( {
 				sourceMap: true,
