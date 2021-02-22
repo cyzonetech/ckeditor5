@@ -1,3 +1,4 @@
+//@ckeditor/ckeditor5-image/src/imageupload/utils.js
 function isLocalImage(node) {
 	if (!node.is('element', 'img') || !node.getAttribute('src')) {
 		return false;

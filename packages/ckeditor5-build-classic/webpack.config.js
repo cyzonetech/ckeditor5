@@ -30,7 +30,7 @@ module.exports = {
 	},
 
 	optimization: {
-		minimize: false,
+		//minimize: false,
 		minimizer: [
 			new TerserPlugin( {
 				sourceMap: true,
@@ -50,7 +50,7 @@ module.exports = {
 			// UI language. Language codes follow the https://en.wikipedia.org/wiki/ISO_639-1 format.
 			// When changing the built-in language, remember to also change it in the editor's configuration (src/ckeditor.js).
 			language: 'zh-cn',
-			additionalLanguages: ['en', 'zh', 'zh-cn']
+			additionalLanguages: ['en']
 		} ),
 		new webpack.BannerPlugin( {
 			banner: bundler.getLicenseBanner(),
